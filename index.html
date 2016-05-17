@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Buttons and Onclick</title>
+	</head>
+	<body>
+		<button onclick="showPicture();">Surprise!</button>
+		
+		<script>
+			function showPicture(){
+				var src="http://37.media.tumblr.com/70e30cecec70cb4ded487f0551493c76/tumblr_mqlyk1IDR21s9t1roo7_500.gif";
+				clickMe("http://37.media.tumblr.com/70e30cecec70cb4ded487f0551493c76/tumblr_mqlyk1IDR21s9t1roo7_500.gif", 500, 282,"Homura Akemi needs to stop");
+			}
+			
+			function clickMe(src, width, height, alt){
+				var img = document.createElement("img");
+				img.src = src;
+				img.width = width;
+				img.height = height;
+				img.alt = alt;
+				document.body.appendChild(img);
+			}
+		</script>
+	</body>
+</html>
